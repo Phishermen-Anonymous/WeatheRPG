@@ -1,0 +1,25 @@
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\bin\Debug\Weather.exe.config
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\obj\Debug\Weather.vbprojResolveAssemblyReference.cache
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\obj\Debug\Weather.Form1.resources
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\obj\Debug\Weather.Resources.resources
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\obj\Debug\Weather.vbproj.GenerateResource.Cache
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\obj\Debug\Weather.xml
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\bin\Debug\Weather.exe
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\bin\Debug\Weather.pdb
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\bin\Debug\Weather.xml
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\obj\Debug\Weather.exe
+C:\Users\iklone\AppData\Local\Temporary Projects\Weather\obj\Debug\Weather.pdb
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\bin\Debug\Weather.exe.config
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\obj\Debug\Weather.exe
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\obj\Debug\Weather.xml
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\obj\Debug\Weather.pdb
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\obj\Debug\Weather.vbprojResolveAssemblyReference.cache
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\obj\Debug\Weather.Form1.resources
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\obj\Debug\Weather.Resources.resources
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\obj\Debug\Weather.vbproj.GenerateResource.Cache
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\bin\Debug\Weather.exe
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\bin\Debug\Weather.pdb
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\bin\Debug\Weather.xml
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\bin\Debug\Newtonsoft.Json.dll
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\bin\Debug\Newtonsoft.Json.xml
+C:\Users\iklone\Documents\Visual Studio 2015\Projects\Weather\Weather\bin\Debug\System.Device.Portable.dll
