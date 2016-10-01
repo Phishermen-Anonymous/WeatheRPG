@@ -1,0 +1,6 @@
+Relevant data to extract from JSON
+
+temperature
+wind speed
+clouds, percentage cover
+main, the general weather
