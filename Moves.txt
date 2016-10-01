@@ -1,0 +1,16 @@
+Name,Damage,piercing,Type,Mana,Speed
+
+types:
+1 sun
+2 lightning
+3 rain
+4 snow
+5 mist/cloud
+6 rainbow
+
+
+
+
+
+Fireball,1,2,fire,1,1
+waterball,
