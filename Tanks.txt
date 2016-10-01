@@ -1,0 +1,55 @@
+LIGHT
+	M2		12t GDR
+	M3 Stuart	13t CGDR
+	-M41 Bulldog	24t CGDL
+
+	Panzer I	 6t GD
+	Panzer II	10t GDL
+	-Leopard	22t GRDL
+
+MEDIUM
+	M4		30t CGDRL
+	Cromwell	28t CGDRL
+	-Centurion	43t CGDL
+
+	Panzer III	19t CGDRL
+	Panzer IV	26t CGDRL
+	-Panther	45t CGDRL
+
+HEAVY
+	M6		57t CGGDRL
+	Churchill VII	40t CGDRL
+	-Conqueror	65t CGDL
+
+	Tiger I		57t CGDRL
+	Tiger II	70t CGDRL
+	-Maus		193 CRDDGLL
+
+DESTROYER
+	M10 Wolverine	28t CDGRL
+	M18 Hellcat	18t CGDRL
+	-Tortoise	77t CGDRLL
+
+	StuG III	23t CDGL
+	StuG IV		28t CDGL
+	-Jagdtiger	75t CRDDGL
+
+ARTILLERY
+	Sexton II	26t CGDRL
+	M12		27t CGDRLL
+	-T92		61t CGDRLL
+
+	Wespe		11t CDGL
+	Hummel		23t CRDGL
+	-GW Tiger	60t CGDRL
+
+
+CREW
+	Commander
+	Driver
+	Gunner
+	Loader
+	Radio Operator
+L can R
+G can C/L/R
+R can L
