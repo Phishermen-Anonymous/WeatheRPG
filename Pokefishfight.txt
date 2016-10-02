@@ -1,0 +1,173 @@
+Module Module1
+
+    Sub Main()
+
+
+    End Sub
+
+    Dim Player(5) As Integer
+    Dim Enemy(7) As Integer
+    Dim PlayerMoves(3) As String
+    Dim PlayerMoveStats(4, 3) As Decimal
+    Dim EnemyMoves(3) As String
+    Dim EnemyMoveStats(4, 3) As Decimal
+    Dim EnemyName As String
+
+    Sub FightSetup(EnemyID As Integer) 'Pass me ID of enemy!
+        Dim Random As New Random
+        Dim PlayerSelected As Integer
+        Dim EnemySelected As Integer
+        Dim Move As String
+        Dim y As Integer
+        Dim w As Integer
+
+        FileOpen(1, "PlayerStats.txt", OpenMode.Input)
+        For x = 0 To 5
+            Player(x) = Val(LineInput(1))
+        Next
+        FileClose(1)
+        FileOpen(1, "Enemies.txt", OpenMode.Input)
+        y = 0
+        Do
+            y = y + 1
+            Move = LineInput(1)
+        Loop Until y = EnemyID
+        FileClose(1)
+        y = 0
+        w = 1
+        For x = 0 To 7
+            Do
+                y = y + 1
+            Loop Until Strings.Mid(Move, y, 1) = ","
+            Enemy(x) = Val(Strings.Mid(Move, w, (y - w)))
+            w = y + 1
+        Next
+        EnemyName = Strings.Mid(Move, w, (Strings.Len(Move) - w + 1))
+
+        Console.WriteLine(EnemyName)
+        For x = 0 To 7
+            Console.WriteLine(Enemy(x))
+        Next
+        Console.ReadKey(True)
+
+        FileOpen(1, "PlayerMoves.txt", OpenMode.Input)
+        For x = 0 To 3
+            y = 0
+            w = 0
+            Move = LineInput(1)
+            If Move <> "x" Then
+                Do
+                    y = y + 1
+                Loop Until Strings.Mid(Move, y, 1) = ","
+                PlayerMoves(x) = Strings.Mid(Move, 1, (y - 1))
+                y = y + 1
+                For z = y To Strings.Len(Move)
+                    If Strings.Mid(Move, z, 1) = "," Then
+                        PlayerMoveStats(w, x) = Val(Strings.Mid(Move, y, (z - y)))
+                        w = w + 1
+                        y = z + 1
+                    End If
+                Next
+            End If
+        Next
+        FileClose(1)
+        For x = 0 To 3
+            FileOpen(1, "Moves.txt", OpenMode.Input)
+            y = 0
+            w = 0
+            EnemySelected = Enemy(7) + x
+            For z = 1 To EnemySelected
+                Move = LineInput(1)
+            Next
+            If Move <> "x" Then
+                Do
+                    y = y + 1
+                Loop Until Strings.Mid(Move, y, 1) = ","
+                EnemyMoves(x) = Strings.Mid(Move, 1, (y - 1))
+                y = y + 1
+                For z = y To Strings.Len(Move)
+                    If Strings.Mid(Move, z, 1) = "," Then
+                        EnemyMoveStats(w, x) = Val(Strings.Mid(Move, y, (z - y)))
+                        w = w + 1
+                        y = z + 1
+                    End If
+                Next
+            End If
+            FileClose(1)
+        Next
+    End Sub
+
+    Sub FightRound(PlayerSelected As Integer)
+        Dim EnemySelected As Integer
+        Dim Random As New Random
+
+        Do
+            Player(3) = Player(3) + Player(5)
+            'For x = 0 To 3
+            '    Console.WriteLine((x + 1) & ". " & PlayerMoves(x) & ", Damage: x" & PlayerMoveStats(0, x) & " Piercing: " & (PlayerMoveStats(1, x) * 100) & "% Mana: " & PlayerMoveStats(3, x))
+            'Next
+            Do
+                'PlayerSelected = (Val(Console.ReadLine()) - 1)
+                If PlayerMoveStats(3, PlayerSelected) > Player(3) Then
+                    Console.WriteLine("You don't have enough mana!")
+                End If
+            Loop Until PlayerMoveStats(3, PlayerSelected) <= Player(3)
+            EnemySelected = Random.Next(0, 4)
+            If EnemyMoveStats(4, EnemySelected) > PlayerMoveStats(4, PlayerSelected) Then
+                Player(2) = Player(2) - Punch(Enemy(0), EnemyMoveStats(0, EnemySelected), EnemyMoveStats(1, EnemySelected), Player(1), EnemyMoveStats(2, EnemySelected), Player(4))
+                Console.WriteLine("Enemy used " & EnemyMoves(EnemySelected))
+                If Player(2) > 0 Then
+                    Enemy(2) = Enemy(2) - Punch(Player(0), PlayerMoveStats(0, PlayerSelected), PlayerMoveStats(1, PlayerSelected), Enemy(1), PlayerMoveStats(2, PlayerSelected), Enemy(4))
+                    Console.WriteLine("You used " & PlayerMoves(PlayerSelected))
+                End If
+            Else
+                Enemy(2) = Enemy(2) - Punch(Player(0), PlayerMoveStats(0, PlayerSelected), PlayerMoveStats(1, PlayerSelected), Enemy(1), PlayerMoveStats(2, PlayerSelected), Enemy(4))
+                Console.WriteLine("You used " & PlayerMoves(PlayerSelected))
+                If Enemy(2) > 0 Then
+                    Player(2) = Player(2) - Punch(Enemy(0), EnemyMoveStats(0, EnemySelected), EnemyMoveStats(1, EnemySelected), Player(1), EnemyMoveStats(2, EnemySelected), Player(4))
+                    Console.WriteLine(EnemyName & " used " & EnemyMoves(EnemySelected))
+                End If
+            End If
+            Console.WriteLine("Your HP: " & Player(2) & ", Your Mana: " & (Player(3) + Player(5)))
+            Console.WriteLine(EnemyName & " HP: " & Enemy(2))
+        Loop Until (Enemy(2) < 1) Or (Player(2) < 1)
+
+        If Player(2) < 1 Then
+            Console.WriteLine("You lost")
+        Else
+            Console.WriteLine("You won")
+        End If
+        Console.ReadKey(True)
+    End Sub
+
+    Function Punch(Attack As Integer, Damage As Decimal, Piercing As Decimal, Defense As Integer, AttackType As Integer, DefendType As Integer)
+        Dim PunchDamage As Decimal
+        PunchDamage = ((Attack * Damage) - (Defense * (1 - Piercing))) '* TypeCalc(AttackType, DefendType)
+        PunchDamage = Math.Ceiling(PunchDamage)
+        Return PunchDamage
+    End Function
+
+    Function TypeCalc(AttackType As Integer, DefendType As Integer)
+        Const Supereffective As Integer = 2
+        Const Uneffective As Integer = 0.5
+        Const Regularlyeffective As Integer = 1
+        Dim TypeDifference As Integer
+        Dim DamageBonus As Decimal
+
+        If AttackType = 7 Or DefendType = 7 Then
+            DamageBonus = Supereffective
+        Else
+
+            Select Case TypeDifference
+                Case -6 Or -5 Or 1 Or 2
+                    DamageBonus = Supereffective
+                Case -1 Or -2 Or 5 Or 6
+                    DamageBonus = Uneffective
+                Case Else
+                    DamageBonus = Regularlyeffective
+            End Select
+        End If
+
+        Return (DamageBonus)
+    End Function
+End Module
