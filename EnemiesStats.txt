@@ -1,0 +1,39 @@
+3,3,10,5,2,3,1,5,Burning Princess
+5,3,10,5,2,3,2,5,Minisun
+4,7,15,5,2,3,3,5,Fire Flower
+9,7,20,5,2,3,4,5,Living Flame
+10,10,20,2,3,5,33,Bomber
+4,3,10,5,1,1,6,9,Spider
+8,3,12,5,1,2,7,9,Droptrio
+15,1,1,20,1,5,10,9,FISH
+10,5,5,5,1,3,11,9,Sharkface
+1,15,10,5,1,5,12,37,Palm Tree
+6,9,7,6,1,6,13,6,UFO
+5,7,5,6,6,5,14,5,Rocket
+5,8,5,6,7,5,15,5,Bird
+100,40,20,6,8,9,16,20,The Concept of Gravity
+1,8,25,6,2,7,17,6,Wind Turbine
+8,9,13,0,3,6,18,8,Cloudy
+8,7,12,0,4,4,19,7,Electric Sheep
+3,2,1,0,5,3,20,5,Flash Bang
+0,2,1,0,8,4,21,5,EMP
+7,8,12,0,3,7,22,5,Roboto
+7,5,8,4,5,8,23,6,Zombie
+9,8,7,4,7,4,24,7,Bad Gungan
+8,7,6,4,8,5,25,5,Casper
+4,8,115,4,3,5,26,7,What even is this?
+3,5,9,4,6,5,27,4,Headless Pumpkin
+2,7,8,7,7,5,28,7,Flag
+2,8,4,7,5,5,29,2,Pot of Gold
+2,9,9,7,5,5,30,9,Buff Guy
+20,9,20,7,5,5,31,9,Unicorn
+15,7,5,7,5,5,32,8,Prism
+7,7,6,3,8,5,33,5,Snow Man
+5,6,5,3,7,5,34,4,Frozen Welly
+1,2,4,3,6,5,35,7,Frozen Fish
+1,7,5,3,3,4,36,4,Tanning Bed
+7,8,6,3,7,3,37,4,Snow Woman
+5,3,4,5,2,5,38,6,Slime-Red
+2,4,3,5,3,2,39,7,Slime-Purple
+4,2,6,5,6,4,40,3,Slime-Blue
+3,6,9,5,7,5,41,4,Slime-Orange
