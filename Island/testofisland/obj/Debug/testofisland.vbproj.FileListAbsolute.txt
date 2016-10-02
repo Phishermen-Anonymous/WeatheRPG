@@ -1,0 +1,10 @@
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\testofisland\testofisland\obj\Debug\testofisland.vbprojResolveAssemblyReference.cache
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\testofisland\testofisland\bin\Debug\testofisland.exe
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\testofisland\testofisland\bin\Debug\testofisland.pdb
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\testofisland\testofisland\obj\Debug\testofisland.exe
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\testofisland\testofisland\obj\Debug\testofisland.pdb
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\Island\testofisland\bin\Debug\testofisland.exe
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\Island\testofisland\bin\Debug\testofisland.pdb
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\Island\testofisland\obj\Debug\testofisland.vbprojResolveAssemblyReference.cache
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\Island\testofisland\obj\Debug\testofisland.exe
+C:\Users\zbysi_000\Documents\SharpDevelop Projects\Island\testofisland\obj\Debug\testofisland.pdb
