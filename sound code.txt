@@ -1,0 +1,2 @@
+My.Computer.Audio.Play("C:\ChestOpen.mp3", 'put your path in there
+        AudioPlayMode.WaitToComplete)
